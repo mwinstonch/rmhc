@@ -26,7 +26,7 @@ export default class EventsByLocation extends React.Component {
 
   getEventsGroupedByDistance(callback) {
     const {events, origin} = this.props;
-
+    console.log(origin, "origin")
     const destinations = events.map((event) => (
       `${event.address.street} ${event.address.zip}`
     ));
